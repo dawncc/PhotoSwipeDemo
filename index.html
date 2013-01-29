@@ -14,7 +14,7 @@
 	$(document).ready(function() {
 		var myPhotoSwipe = $("#Gallery a").photoSwipe({
 			slideshowDelay:2000,
-		});
+		}).attr("data-ajax", false); //取消图片的Ajax加载方式
 	});
 	</script>
 </head> 
@@ -27,12 +27,12 @@
 		<!-- /header -->
 		<div data-role="content"> 
 			<ul id="Gallery">
-				<li><a href="img/a.jpg"><img src="img/a.jpg" alt="Image 01" /></a></li>
-				<li><a href="img/b.jpg"><img src="img/b.jpg" alt="Image 02" /></a></li>
-				<li><a href="img/c.jpg"><img src="img/c.jpg" alt="Image 03" /></a></li>
-				<li><a href="img/d.jpg"><img src="img/d.jpg" alt="Image 04" /></a></li>
-				<li><a href="img/e.jpg"><img src="img/e.jpg" alt="Image 05" /></a></li>
-				<li><a href="img/a.jpg"><img src="img/a.jpg" alt="Image 06" /></a></li>
+				<li><a href="img/a.jpg" ><img src="img/a.jpg" alt="Image 01" /></a></li>
+				<li><a href="img/b.jpg" ><img src="img/b.jpg" alt="Image 02" /></a></li>
+				<li><a href="img/c.jpg" ><img src="img/c.jpg" alt="Image 03" /></a></li>
+				<li><a href="img/d.jpg" ><img src="img/d.jpg" alt="Image 04" /></a></li>
+				<li><a href="img/e.jpg" ><img src="img/e.jpg" alt="Image 05" /></a></li>
+				<li><a href="img/a.jpg" ><img src="img/a.jpg" alt="Image 06" /></a></li>
 			</ul>
 		</div>
 		<!-- /content -->
